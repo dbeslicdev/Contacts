@@ -14,9 +14,7 @@ export const Login = ({ formData, setFormData }) => {
     setFormData(INIT_STATE_FORM_DATA);
   };
 
-  const handleSubmit = () => {
-    console.log(formData, "frmdt");
-  };
+  const handleSubmit = () => {};
   return (
     <Card>
       <Form>
@@ -28,7 +26,7 @@ export const Login = ({ formData, setFormData }) => {
           />
         </Form.Item>
         <Form.Item label="Password">
-          <Input
+          <Input.Password
             name="password"
             value={formData.password}
             onChange={handleFieldChange}
